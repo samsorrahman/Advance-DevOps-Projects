@@ -25,9 +25,6 @@
         footer {
             text-align: center;
         }
-        iframe {
-            margin-bottom: 20px;
-        }
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -48,41 +45,36 @@
 </head>
 <body>
     <header>
-        <h1 style="color: #ff6600;">Welcome to <span style="color: #0099cc;">CodeWithMuh</span> Youtube Channel!</h1>
+        <h1 style="color: #ff6600;">Welcome to <span style="color: #0099cc;">Code wtih Samsor</span> Website!</h1>
     </header>
     <main>
-        <!-- Embed YouTube video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LaoYcQsPyD8?si=x84PLT5e3rSXbPvQ" frameborder="0" allowfullscreen></iframe>
         <!-- Add custom message -->
-        <p style="color: #ff6600;">You are watching my latest video on <span style="color: #0099cc;">AWS EC2</span>.</p>
+        <p style="color: #ff6600;">Check out my projects and connect with me!</p>
         <!-- Add LinkedIn game -->
         <h2 style="color: #0099cc;">LinkedIn Connection Game</h2>
         <p style="color: #ff6600;">Are you connected with me on LinkedIn?</p>
         <button onclick="checkLinkedInConnection()">Check Connection</button>
         <p id="result"></p>
-        <!-- Add Subscribe button -->
-        <button onclick="subscribeToChannel()">Subscribe to my channel</button>
+        <!-- Add GitHub repository link -->
         <button onclick="toGithubRepo()">Github Repo</button>
     </main>
     <footer>
-        <p style="color: #ff6600;">&copy; 2024 <span style="color: #0099cc;">CodeWithMuh</span></p>
+        <p style="color: #ff6600;">&copy; 2024 <span style="color: #0099cc;">CodewithSamsor</span></p>
     </footer>
     <!-- Add any additional scripts or JavaScript here -->
     <script>
         function checkLinkedInConnection() {
             // Logic to check if user is connected on LinkedIn
-            var connected = Math.random() < 0.00; // 5% chance of being connected
-            var resultMessage = connected ? "Yes, you are connected with me on LinkedIn!" : "No, you are not connected with me on LinkedIn. Connect now: <a href='https://www.linkedin.com/in/muhammad-rashid-daha/' target='_blank'>Follow me on LinkedIn</a>";
+            var connected = Math.random() < 0.05; // 5% chance of being connected
+            var resultMessage = connected ? 
+                "Yes, you are connected with me on LinkedIn!" : 
+                "No, you are not connected with me on LinkedIn. Connect now: <a href='https://www.linkedin.com/in/samsor-rahman18/' target='_blank'>Follow me on LinkedIn</a>";
             document.getElementById("result").innerHTML = resultMessage;
         }
 
-        function subscribeToChannel() {
-            // Redirect users to subscribe to the YouTube channel
-            window.open('https://youtube.com/@codewithmuh?sub_confirmation=1', '_blank');
-        }
         function toGithubRepo() {
-            // Redirect users to subscribe to the YouTube channel
-            window.open('https://github.com/codewithmuh/django-aws-ec2-autoscaling.git', '_blank');
+            // Redirect users to the GitHub repository
+            window.open('https://github.com/samsorrahman/Advance-DevOps-Projects.git', '_blank');
         }
     </script>
 </body>
