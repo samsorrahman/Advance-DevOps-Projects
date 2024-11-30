@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # Replace {YOUR_PROJECT_MAIN_DIR_NAME} with your actual project directory name
-PROJECT_MAIN_DIR_NAME="django-aws-ec2-autoscaling"
+PROJECT_MAIN_DIR_NAME="Advance-DevOps-Projects/django-aws-ec2-autoscaling"
 
 # Copy gunicorn  service file
 sudo cp "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/gunicorn/gunicorn.service" "/etc/systemd/system/gunicorn.service"
