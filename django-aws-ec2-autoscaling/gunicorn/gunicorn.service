@@ -6,7 +6,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/django-aws-ec2-autoscaling
-ExecStart=/home/ubuntu/django-aws-ec2-autoscaling/venv/bin/gunicorn \
+ExecStart=/home/ubuntu/django-aws-ec2-autoscaling/myenv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind 0.0.0.0:8000 \

@@ -17,7 +17,7 @@ cd "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
 
 # Activate virtual environment
 echo "Activating virtual environment..."
-source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/venv/bin/activate"
+source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/myenv/bin/activate"
 
 # Run collectstatic command
 echo "Running collectstatic command..."

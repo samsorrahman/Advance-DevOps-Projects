@@ -14,11 +14,11 @@ sudo chown -R ubuntu:ubuntu "/home/ubuntu/$PROJECT_MAIN_DIR_NAME"
 
 # Create virtual environment
 echo "Creating virtual environment..."
-virtualenv "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/venv"
+virtualenv "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/myenv"
 
 # Activate virtual environment
 echo "Activating virtual environment..."
-source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/venv/bin/activate"
+source "/home/ubuntu/$PROJECT_MAIN_DIR_NAME/myenv/bin/activate"
 
 # Install dependencies
 echo "Installing Python dependencies..."
